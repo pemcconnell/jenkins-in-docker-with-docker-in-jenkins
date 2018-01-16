@@ -14,4 +14,7 @@ docker exec -ti jenkins_master \
       tar -zcvf /tmp/backup.tar.gz ."
 
 # copy the tar onto the host ...
-docker cp jenkins_master:/tmp/backup.tar.gz ./backups/backup.tar.gz
+docker cp jenkins_master:/tmp/backup.tar.gz ./backups/jenkins_home.tar.gz
+
+# if we wanted to backup the version of jenkins itself we could do:
+#docker cp jenkins_master:/usr/share/jenkins/jenkins.war ./backups/jenkins.war
