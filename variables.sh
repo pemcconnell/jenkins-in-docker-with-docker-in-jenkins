@@ -1,6 +1,6 @@
 #!/bin/bash - 
 
-IMAGE='flexera-example/jenkins'
+IMAGE='example/jenkins'
 TAG='latest'
 SCALE=2
 EXECUTORS=4
